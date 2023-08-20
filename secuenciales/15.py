@@ -1,18 +1,18 @@
 import os
 os.system("cls")
 
-soles=int(input("ingrese el importe en soles : "))
+juan=float(input("Cantidad de dinero que aporta Juan en dolares : "))
+rosa=float(input("Cantidad de dinero que aporta Rosa en dolares : "))
+daniel=float(input("Cantidad de dinero que aporta Daniel en soles : "))
 
-dolares=int(input("ingrese el importe en dolares : "))
+dolar_daniel= daniel/3.00
+total_dolares=juan+rosa+dolar_daniel
 
-SolesaDolares=soles / 3
+p_juan=juan*100/total_dolares
+p_rosa=rosa*100/total_dolares
+p_daniel=dolar_daniel*100/total_dolares
 
-total=SolesaDolares+ dolares
-
-pDolares = SolesaDolares*100/total
-pSoles = dolares*100/total
-
-
-print(f"Capital Total: {total} Dolares")
-print(f"porcentaje de soles : {pSoles:.2f}% ")
-print(f"porcentaje de dolares : {pDolares:.2f}%")
+print("Capital total en dolares es: ", total_dolares)
+print(f"Juan aporta el: {p_juan:.2f} % del capital")
+print(f"Rosa aporta el: {p_rosa:.2f} % del capital")
+print(f"Daniel aporta el: {p_daniel:.2f} % del capital")
