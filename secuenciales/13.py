@@ -7,4 +7,3 @@ Cadyacente=int(input("Cateto Adyacente: "))
 Hipotenusa=(Copuesto**2+Cadyacente**2)**0.5
 
 print("Hipotenusa: ",Hipotenusa)
-
