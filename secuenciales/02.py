@@ -3,7 +3,7 @@ os.system("cls")
 
 metro=int(input("Ingrese la cantidad de metros: "))
 
-centimetro = 100* metro  
+centimetro = metro * 100 
 pulgada = centimetro//2.54
 pies = pulgada//12
 yarda = pies//3
